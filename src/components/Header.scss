@@ -1,0 +1,41 @@
+/* Header.scss */
+.header {
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 0;
+  
+    .menu {
+      margin-right: 650px;
+      font-family: 'Noto Sans', sans-serif;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+  
+        &:hover {
+          color: #007bff;
+        }
+      }
+  
+      @media (max-width: 1023px) {
+        margin-right: 20px;
+      }
+  
+      @media (max-width: 767px) {
+        margin-right: 0; 
+        justify-content: center;
+      }
+    }
+    main {
+        margin-top: 0; 
+    }
+  }
+  
