@@ -15,6 +15,7 @@ function Carousel() {
   
     const [currentImage, setCurrentImage] = useState(0);
   
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const nextImage = () => {
       setCurrentImage((currentImage + 1) % images.length);
     };
@@ -27,12 +28,12 @@ function Carousel() {
       return () => {
         clearInterval(interval);
       };
-    }, [currentImage]);
+    }, [currentImage, nextImage]);
   
     return (
       <div className="carousel">
         <div className="carousel-content">
-          <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+          <img src={images[currentImage]} alt={` ${currentImage + 1}`} />
           <div className="logo-text">
             <img src={logoImage} alt="Your Logo" className="logo-image" />
             <p>Logo</p>

@@ -1,0 +1,50 @@
+.footer {
+    background-color: #5D6273;
+    text-align: center;
+    padding: 20px; 
+    color: white;
+}
+
+.line {
+    border-top: 1px solid white;
+    margin: 15px 375px; 
+    width: 50%;
+}
+
+.social-icons {
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+}
+
+.social-icons i {
+    margin: 10px 10px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 20px; 
+    }
+
+    .line {
+        margin: 15px auto; 
+        width: 80%; 
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+    .mobile-menus {
+        display: block; 
+    p{
+        margin-bottom: 10px;
+    }
+    }
+}
+@media (min-width: 768px) {
+    .mobile-menus {
+        display: none; 
+    }
+}
