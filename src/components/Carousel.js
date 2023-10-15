@@ -23,7 +23,7 @@ function Carousel() {
     useEffect(() => {
       const interval = setInterval(() => {
         nextImage();
-      }, 3000); // Change the interval (in milliseconds) to adjust autoplay speed
+      }, 3000); 
   
       return () => {
         clearInterval(interval);
