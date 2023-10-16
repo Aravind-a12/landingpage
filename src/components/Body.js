@@ -22,17 +22,41 @@ function Body() {
       </div>
         
         <div className="image-container">
-          <img src={File1} alt="Description" className="image" />
-          <img src={File2} alt="Description" className="image" />
-          <img src={File3} alt="Description" className="image" />
+             {/* Image 1 */}
+             <div className="image-with-text">
+            <img src={File1} alt="Description" className="image" />
+            <div className="image-text">Lorem ipsum dolor sit</div>
+            <div className="lower-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+
+          {/* Image 2 */}
+          <div className="image-with-text">
+            <img src={File2} alt="Description" className="image" />
+            <div className="upper-text">02</div>
+            <div className="image-text">Lorem ipsum dolor sit</div>
+            <div className="lower-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+
+          {/* Image 3 */}
+          <div className="image-with-text">
+            <img src={File3} alt="Description" className="image" />
+            <div className="upper-text">03</div>
+            <div className="image-text">Lorem ipsum dolor sit</div>
+            <div className="lower-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+        </div>
+        <div className="container" >
+          <h1>Lorem ipsum </h1>
+        <div className="vertical-line"></div>
+        <div className="horizontal-line">
+       
+        <br/><div className='linepara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
         
-        <div className="container" >
-        <div className="vertical-line"></div>
-        <div className="horizontal-line"></div>
-
         <div className="container-content">
-          <img src={containerImage} alt="Container" className="container-image" />
+          <div className='wid'>
+          <img src={containerImage} alt="Container" className="container-image" /></div>
           <div className="content">
             <button>Lorem ipsum →</button>
           </div>
