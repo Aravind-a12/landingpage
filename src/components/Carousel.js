@@ -33,10 +33,10 @@ function Carousel() {
     return (
       <div className="carousel">
         <div className="carousel-content">
-          <img src={images[currentImage]} alt={` ${currentImage + 1}`} />
+          <img src={images[currentImage]} width={window.innerWidth} alt={` ${currentImage + 1}`} />
           <div className="logo-text">
             <img src={logoImage} alt="Your Logo" className="logo-image" />
-            <p>Logo</p>
+            <p>L O G O</p>
           </div>
           <div className="after"></div>
           <main>

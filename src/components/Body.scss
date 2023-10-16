@@ -1,18 +1,16 @@
 .hero {
     position: relative;
   }
-  
   .image-container {
     display: flex;
-    flex-direction: column; 
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+    justify-content: space-between; /* Distribute space evenly between images */
+    overflow: hidden; /* Hide any overflowing content */
   }
-  
-  .image {
-    width: 100%; 
-    max-width: 506px; 
+  .image{
     height: auto;
+    max-width: 100%;
   }
-  
 .container {
     background-color: #DCE1E6;
     display: flex;
@@ -20,19 +18,18 @@
     align-items: center;
     padding: 20px;
     position: relative;
-    z-index: 0; 
+    z-index: 0;
   }
-  
   .vertical-line {
     position: absolute;
-    border: 60px solid blue;
-    background-color: blue;
+    border: 60px solid #6A45FF;
+    background-color: #6A45FF;
     width: 10px; 
-    height: 100%;
+    height: 48px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1; 
+    z-index: 1;
   }
   
   .container-content {

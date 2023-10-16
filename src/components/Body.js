@@ -12,9 +12,9 @@ function Body() {
       <section className="hero">
         <MyCarousel />
         <div className="image-container">
-          <img src={File1} alt="Description" className="image" />
-          <img src={File2} alt="Description" className="image" />
-          <img src={File3} alt="Description" className="image" />
+          <img src={File1} width={window.innerWidth / 3} alt="Description" className="image" />
+          <img src={File2}  width={window.innerWidth / 3} alt="Description" className="image" />
+          <img src={File3} width={window.innerWidth / 3} alt="Description" className="image" />
         </div>
       </section>
       <div className="container" >
