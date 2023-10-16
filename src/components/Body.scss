@@ -10,7 +10,7 @@
     flex-wrap: nowrap; /* Prevent wrapping to next line */
     margin-top: 5%;
     overflow: hidden; /* Hide any overflowing content */
-    max-width: 100%;
+    
   }
   .para{
     text-align: center;
@@ -19,7 +19,8 @@
     font-size: 15px;
   }
   .image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 506px;
     height: auto;
   }
   
@@ -287,20 +288,7 @@
       .bottom {
         border-width: 36px; 
       }
-      .image-container {
-        display: flex;
-        flex-direction: row; 
-        position: relative;
-        z-index: 2;  
-        
-        margin-top: 5%;
-        max-width: 100%;
-        
-      }
-      .image {
-        max-width: 50%;
-        height: auto;
-      }
+      
   }
   
   
