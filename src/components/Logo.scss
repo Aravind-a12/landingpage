@@ -6,6 +6,7 @@
     font-family: 'Revalia', sans-serif;
     text-align: center;
     color: black;
+    letter-spacing: 3px;
   
     .logo-image {
       max-width: 32px;
@@ -24,6 +25,8 @@
   
     @media (max-width: 767px) {
       font-size: 20px; 
+
+        display: flex;
       .logo-image {
         max-width: 20px; 
         max-height: 20px;

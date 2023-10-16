@@ -36,7 +36,7 @@ function Carousel() {
           <img src={images[currentImage]} alt={` ${currentImage + 1}`} />
           <div className="logo-text">
             <img src={logoImage} alt="Your Logo" className="logo-image" />
-            <p>Logo</p>
+            <p>LOGO</p>
           </div>
           <div className="after"></div>
           <main>
@@ -44,6 +44,7 @@ function Carousel() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
               incididunt ut labore et dolore magna aliqua.
             </p>
+           
           </main>
         </div>
       </div>

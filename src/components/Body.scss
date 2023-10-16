@@ -5,11 +5,21 @@
   .image-container {
     display: flex;
     flex-direction: column; 
+    position: relative;
+    z-index: 2;  
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+    margin-top: 5%;
+    overflow: hidden; /* Hide any overflowing content */
+    max-width: 100%;
   }
-  
+  .para{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+  }
   .image {
-    width: 100%; 
-    max-width: 506px; 
+    max-width: 100%;
     height: auto;
   }
   
@@ -20,13 +30,23 @@
     align-items: center;
     padding: 20px;
     position: relative;
-    z-index: 0; 
+    z-index: 1; 
+  }
+  .containernew{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10%;
   }
   
   .vertical-line {
     position: absolute;
-    border: 60px solid blue;
-    background-color: blue;
+    border: 100px solid #6A45FF;
+    background-color: #6A45FF;    
     width: 10px; 
     height: 100%;
     top: 0;
@@ -35,9 +55,10 @@
     z-index: 1; 
   }
   
+  
   .container-content {
     position: relative;
-    z-index: 1; 
+    z-index: 2; 
   }
   
   .container-image {
@@ -47,17 +68,32 @@
     width: 100%;
     margin-right: 40%;
     margin-top: 80px;
+    z-index: 0;
   }
   
   .content {
-    
+
     flex-direction: row;
     align-items: flex-start;
     margin-left: 70%;
   }
+.horizontal-line {
+    position: absolute;
+    background-color: blue;
+    width: 230px; 
+    height: 4px;
+    top: 4 * 20px;
+    left: 65%; 
+    transform: translateX(-50%); 
+    z-index: 2; 
+  }
   
   p {
     margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 5px;
   }
   
   button {
@@ -80,6 +116,7 @@
   
   .polygon {
     position: absolute;
+    
     top: 30%; 
     left: 710px;
     transform: translate(-50%, -50%); 
@@ -137,6 +174,26 @@
       display: block;
       margin: 1rem auto;
     }
+    p {
+        text-align: center;
+        margin: 0;
+        color: white;
+        font-weight: 600;
+        font-size: 10px;
+        left: 10px;
+        letter-spacing: 3px;
+      }
+      .para{
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 5px;
+      }
+    .horizontal-line{
+        top: 40px;
+        left: 112px;
+        width: 200px;
+    }
     .container {
       flex-direction: column-reverse;
       align-items: center;
@@ -144,8 +201,7 @@
 
     }
     .vertical-line {
-        border: 20px solid blue;
-        opacity: 0.4;
+        border: 20px solid #6A45FF;
     }
     .container-image {
       max-width: 55%;
@@ -163,8 +219,9 @@
       cursor: pointer;
     }
     .polygon {
+        margin-left: 27%;
         top: 30%; 
-        left: 40%; 
+        left: 15%; 
         transform: translate(-50%, -50%); 
       }
       
@@ -180,11 +237,70 @@
     .image-container {
       flex-direction: row;
     }
-  
+    
     .image {
       width: 100%;
       max-width: 506px;
       display: block;
     }
   }
+//   @media (min-width: 3000px) {
+//     .polygon {
+//         margin-left: 25%;
+//         top: 30%; 
+//         left: 24%; 
+//         transform: translate(-50%, -50%); 
+//       }
+      
+//       .right,
+//       .top,
+//       .left,
+//       .bottom {
+//         border-width: 36px; 
+//       }
+//       .image-container {
+//         display: flex;
+//         flex-direction: row; 
+//         position: relative;
+//         z-index: 2;  
+//         flex-wrap: nowrap; /* Prevent wrapping to next line */
+//         margin-top: 5%;
+//         max-width: 100%;
+        
+//       }
+//       .image {
+//         max-width: 50%;
+//         height: auto;
+//       }
+//   }
+  @media (min-width: 1440px) {
+    .polygon {
+        margin-left: 18%;
+        top: 30%; 
+        left: 30%; 
+        transform: translate(-50%, -50%); 
+      }
+      
+      .right,
+      .top,
+      .left,
+      .bottom {
+        border-width: 36px; 
+      }
+      .image-container {
+        display: flex;
+        flex-direction: row; 
+        position: relative;
+        z-index: 2;  
+        
+        margin-top: 5%;
+        max-width: 100%;
+        
+      }
+      .image {
+        max-width: 50%;
+        height: auto;
+      }
+  }
+  
   
