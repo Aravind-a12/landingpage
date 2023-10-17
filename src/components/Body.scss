@@ -130,10 +130,10 @@
   
   .polygon {
     position: absolute;
-    
     top: 30%; 
     left: 710px;
     transform: translate(-50%, -50%); 
+    transform-origin: center ;
     animation: logoAnimation 4s infinite; 
   }
   
@@ -240,9 +240,7 @@
     0% {
       transform: rotate(0deg) scale(1); 
     }
-    50% {
-      transform: rotate(180deg) scale(1.5); 
-    }
+    
     100% {
       transform: rotate(360deg) scale(1);
     }
@@ -270,7 +268,7 @@
       }
     .horizontal-line{
         top: 60px;
-        left: 99px;
+        left: 95px;
         width: 197px;
     }
     .container {
@@ -299,9 +297,9 @@
       cursor: pointer;
     }
     .polygon {
-        margin-left: 27%;
+     
         top: 30%; 
-        left: 15%; 
+        left: 41%; 
         transform: translate(-50%, -50%); 
       }
       
@@ -312,16 +310,17 @@
         border-width: 36px; 
       }
       .linepara{
-        font-weight: 400;
+        font-weight: 500;
         font-size: 12px; /* Adjust the font size as needed */
         width: 110%; /* Adjust the width as needed */
         text-align: justify; /* Center the text */
         margin-top: 61%; /* Space from the h1 */
         margin-bottom: 5%; /* Space at the bottom */
+        margin-left: 7px;
       }
       h1{
         text-align: left;
-        margin: 5% 63% 80% 0; /* Position at the top with margin-bottom to create space */
+        margin: 5% 63% 50% 0; /* Position at the top with margin-bottom to create space */
         font-size: 20px; /* Adjust the font size as needed */
       }
      
@@ -357,35 +356,7 @@
       display: block;
     }
   }
-//   @media (min-width: 3000px) {
-//     .polygon {
-//         margin-left: 25%;
-//         top: 30%; 
-//         left: 24%; 
-//         transform: translate(-50%, -50%); 
-//       }
-      
-//       .right,
-//       .top,
-//       .left,
-//       .bottom {
-//         border-width: 36px; 
-//       }
-//       .image-container {
-//         display: flex;
-//         flex-direction: row; 
-//         position: relative;
-//         z-index: 2;  
-//         flex-wrap: nowrap; /* Prevent wrapping to next line */
-//         margin-top: 5%;
-//         max-width: 100%;
-        
-//       }
-//       .image {
-//         max-width: 50%;
-//         height: auto;
-//       }
-//   }
+ 
   @media (min-width: 1280px) and (max-width: 1439px) {
     .polygon {
         margin-left: 18%;
@@ -408,7 +379,34 @@
         width: 100%;
         max-width: 450px;
       }
-     
   }
   
+  
+  @media (min-width: 1500px)and(max-width: 2500px) {
+    .polygon {
+      margin-left: 18%;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      transform-origin: center;
+    }
+  
+    .right,
+    .top,
+    .left,
+    .bottom {
+      border-width: 36px;
+    }
+  
+    .image-container {
+      max-width: 100%;
+    }
+  
+    .image {
+      width: 100%;
+      max-width: 450px;
+    }
+  
+  
+  }
   
