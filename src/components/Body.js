@@ -22,6 +22,7 @@ function Body() {
       </div>
         
         <div className="image-container">
+        <div className="vertical-line2"></div>
              {/* Image 1 */}
              <div className="image-with-text">
             <img src={File1} alt="Description" className="image" />
@@ -45,23 +46,26 @@ function Body() {
             <div className="lower-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </div>
         </div>
+       
         <div className="container" >
           <h1>Lorem ipsum </h1>
-        <div className="vertical-line"></div>
+        <div className="vertical-line2"></div>
         <div className="horizontal-line">
        
         <br/><div className='linepara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
-        
         <div className="container-content">
           <div className='wid'>
           <img src={containerImage} alt="Container" className="container-image" /></div>
           <div className="content">
-            <button>Lorem ipsum →</button>
+          <span className='btn-text'>Lorem <div className='btn-txt1'>ipsum</div><button className='circle-button'>→ </button> </span>
+
           </div>
         </div>
+        
       </div>
+      
       </section>
       <div className="white-container">
       <div className="polygon">

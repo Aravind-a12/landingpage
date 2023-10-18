@@ -25,7 +25,6 @@
   }
   
 .container {
-    margin-top: 5px;
     background-color: #DCE1E6;
     display: flex;
     justify-content: center;
@@ -43,6 +42,7 @@
     position: relative;
     z-index: 1;
     margin-top: 10%;
+    
   }
   
   .vertical-line {
@@ -56,7 +56,18 @@
     transform: translateX(-50%);
     z-index: 1; 
   }
-  
+   
+  .vertical-line2 {
+    position: absolute;
+    border: 100px solid #6A45FF;
+    background-color: #6A45FF;    
+    width: 10px; 
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; 
+  }
   
   .container-content {
     position: relative;
@@ -233,14 +244,43 @@
     bottom: 26%;
   }
 
-  
+  .btn-text{ 
+    position: relative;
+    display: flex;
+    margin-right: 90px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 20px;
+    letter-spacing: 5px;
+  }
+  .btn-txt1{
+    margin-left: 5px;
+    letter-spacing: 5px;
+  }
+  .circle-button {
+    position: relative;
+    background: transparent;
+    border: 2px solid #6A45FF; /* Adjust the border color */
+    border-radius: 50%; /* Create a circular border */
+    width: 30px; /* Adjust the button width */
+    height: 30px; /* Adjust the button height */
+    font-size: 21px; /* Adjust the arrow size as needed */
+    color: #6A45FF; /* Arrow color */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 60%;
+    
+  }
   /* Additional styles for text and other elements as needed */
   
   @keyframes logoAnimation {
     0% {
       transform: rotate(0deg) scale(1); 
     }
-    
+
     100% {
       transform: rotate(360deg) scale(1);
     }
@@ -249,7 +289,7 @@
   @media (max-width: 767px) {
     .image {
       display: block;
-      margin: 1rem auto;
+      margin-bottom: 30px;
     }
     p {
         text-align: center;
@@ -280,7 +320,13 @@
     }
     .vertical-line {
         border: 20px solid #6A45FF;
+        opacity: 0.4;
+        height: 34%;
     }
+    .vertical-line2 {
+      border: 20px solid #6A45FF;
+      opacity: 0.4;
+  }
     .container-image {
       max-width: 50%;
       max-height: 300px;
@@ -290,7 +336,7 @@
       margin-left: 10%;
       text-align: left;
     }
-  
+   
     button {
       margin-right: 20px;
       font-size: 15px;
@@ -320,7 +366,7 @@
       }
       h1{
         text-align: left;
-        margin: 5% 63% 50% 0; /* Position at the top with margin-bottom to create space */
+        margin: 5% 63% 77% 0; /* Position at the top with margin-bottom to create space */
         font-size: 20px; /* Adjust the font size as needed */
       }
      
@@ -341,6 +387,25 @@
     .lower-text {
         bottom: 20%; /* Adjust position for mobile */
         padding-left: 30px;
+    }
+    .btn-text{
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin-left: 30px;
+    }
+    .btn-txt1{
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin-right: 0px;
+    }
+    .circle-button{
+      font-size: 15px;
+      width: 30px;
+      height: 30px;
+      border: 2px solid black;
+      color: black;
+      
+      
     }
 
   }

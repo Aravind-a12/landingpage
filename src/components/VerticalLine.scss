@@ -7,11 +7,13 @@
   left: 50%;
   transform: translateX(-50%); 
   z-index: 0; 
+
 }
 
 @media (max-width: 767px) {
     .vertical-line {
         border: 20px solid #6A45FF;
-  
+        opacity: 0.5;
+        
   }
 }
